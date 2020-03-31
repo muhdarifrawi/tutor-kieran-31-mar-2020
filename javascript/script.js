@@ -1,18 +1,32 @@
-let x = document.getElementsByTagName("div");
+function changeBlue(){
+    document.getElementsByTagName("h1")[1].style.color="blue";
 
-x[0].style.color = "red";
+}
 
-console.log(x);
+function changeRed(){
+    document.getElementsByTagName("h1")[1].style.color="red";
 
-let y = "7";
+}
 
-// Variables are like boxes. They hold stuff for you.
-/* this is also a comment 
-    multi-line comments are possible.
-*/
+function changeGreen(){
+    document.getElementsByTagName("h1")[1].style.color="green";
 
-// this is a variable with a string
-let z = "3";
+}
 
-// console.log("Z:")
-// console.log(z + y);
+function boxColorA(){
+    let x = document.getElementsByClassName("box-a")[0];
+    console.log(x)
+    x.style.backgroundColor="grey";
+}
+
+function boxColorB(){
+    document.getElementsByClassName("box-a")[0].style.backgroundColor="blue";
+}
+
+function boxColorC(){
+     document.getElementById("box-b").style.backgroundColor="grey";
+}
+
+function boxColorD(){
+    document.getElementById("box-b").style.backgroundColor="blue";
+}

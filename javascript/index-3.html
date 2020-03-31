@@ -3,12 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
     <title>Document</title>
 </head>
 <body>
     <h1>Hello!</h1>
     <h1>Good!</h1>
     <h1>Morning!</h1>
+
+    <button onclick="changeBlue()">Blue</button>
+    <button onclick="changeRed()">Red</button>
+    <button onclick="changeGreen()">Green</button>
+
+    <div class="box-a" style="background-color:grey;height:50px;width:50px;" onmouseout="boxColorA()" onmouseover="boxColorB()">
+    By Class
+    </div>
+
+    <div id="box-b" style="background-color:grey;height:50px;width:50px;" onmouseout="boxColorC()" onmouseover="boxColorD()">
+    By Id
+    </div>
     <!-- document.getElementsByTagName("h1"); -->
     <!-- 1.) Change the text "Morning" into "Night" -->
     <!-- 2.) Change the text colot of "Good" into blue -->
